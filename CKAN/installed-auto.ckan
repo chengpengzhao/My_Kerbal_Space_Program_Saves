@@ -3,7 +3,7 @@
     "identifier": "installed-auto",
     "name": "installed-auto",
     "abstract": "A list of modules installed on the auto KSP instance",
-    "version": "2020.02.01.03.46.40",
+    "version": "2020.02.01.02.04.26",
     "license": [
         "unknown"
     ],
@@ -95,6 +95,26 @@
         {
             "name": "Trajectories",
             "version": "v2.3.0"
+        },
+        {
+            "name": "EditorExtensionsRedux",
+            "version": "3.4.1"
+        },
+        {
+            "name": "PreciseEditor",
+            "version": "1.3.3"
+        },
+        {
+            "name": "WasdEditorCameraContinued",
+            "version": "0.7.0.1"
+        },
+        {
+            "name": "ClickThroughBlocker",
+            "version": "0.1.9.5"
+        },
+        {
+            "name": "ToolbarController",
+            "version": "1:0.1.9.4"
         }
     ],
     "kind": "metapackage"
