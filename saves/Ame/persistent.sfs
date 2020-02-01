@@ -1,0 +1,6693 @@
+GAME
+{
+	version = 1.5.1
+	Title = Ame (CAREER)
+	Description = No description available.
+	linkURL = 
+	linkCaption = 
+	Mode = CAREER
+	Status = 1
+	Seed = 1809153510
+	scene = 5
+	editor = None
+	flag = Squad/Flags/default
+	launchID = 4
+	defaultVABLaunchSite = LaunchPad
+	defaultSPHLaunchSite = Runway
+	modded = True
+	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe -single-instance - 
+	versionFull = 1.5.1.2335 (WindowsPlayer x64)
+	versionCreated = 1.5.1.2335 (WindowsPlayer x64)
+	PARAMETERS
+	{
+		preset = Normal
+		FLIGHT
+		{
+			CanQuickSave = True
+			CanQuickLoad = True
+			CanAutoSave = True
+			CanUseMap = True
+			CanSwitchVesselsNear = True
+			CanSwitchVesselsFar = True
+			CanTimeWarpHigh = True
+			CanTimeWarpLow = True
+			CanEVA = True
+			CanIVA = True
+			CanBoard = True
+			CanRestart = True
+			CanLeaveToEditor = True
+			CanLeaveToTrackingStation = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = True
+		}
+		EDITOR
+		{
+			CanSave = True
+			CanLoad = True
+			CanStartNew = True
+			CanLaunch = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+			startUpMode = 0
+			craftFileToLoad = 
+		}
+		TRACKINGSTATION
+		{
+			CanFlyVessel = True
+			CanAbortVessel = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		SPACECENTER
+		{
+			CanGoInVAB = True
+			CanGoInSPH = True
+			CanGoInTrackingStation = True
+			CanLaunchAtPad = True
+			CanLaunchAtRunway = True
+			CanGoToAdmin = True
+			CanGoToAstronautC = True
+			CanGoToMissionControl = True
+			CanGoToRnD = True
+			CanSelectFlag = True
+			CanLeaveToMainMenu = True
+		}
+		DIFFICULTY
+		{
+			AutoHireCrews = False
+			MissingCrewsRespawn = True
+			RespawnTimer = 7200
+			BypassEntryPurchaseAfterResearch = True
+			AllowStockVessels = False
+			IndestructibleFacilities = False
+			ResourceAbundance = 1
+			ReentryHeatScale = 1
+			EnableCommNet = False
+			AllowOtherLaunchSites = False
+		}
+		CAREER
+		{
+			TechTreeUrl = GameData\ModuleManager.TechTree
+			StartingFunds = 25000
+			StartingScience = 0
+			StartingReputation = 0
+			FundsGainMultiplier = 1
+			RepGainMultiplier = 1
+			ScienceGainMultiplier = 1
+			FundsLossMultiplier = 1
+			RepLossMultiplier = 1
+			RepLossDeclined = 1
+		}
+		AdvancedParams
+		{
+			EnableKerbalExperience = True
+			ImmediateLevelUp = False
+			AllowNegativeCurrency = False
+			PressurePartLimits = False
+			GPartLimits = False
+			GKerbalLimits = False
+			KerbalGToleranceMult = 1
+			ResourceTransferObeyCrossfeed = False
+			ActionGroupsAlways = False
+			BuildingImpactDamageMult = 0.05
+			PartUpgradesInSandbox = False
+			PartUpgradesInCareer = True
+			PartUpgradesInMission = False
+		}
+		CommNetParams
+		{
+			requireSignalForControl = False
+			plasmaBlackout = False
+			rangeModifier = 1
+			DSNModifier = 1
+			occlusionMultiplierVac = 0.9
+			occlusionMultiplierAtm = 0.75
+			enableGroundStations = True
+		}
+		KJRSettings
+		{
+		}
+		kOSConnectivityParameters
+		{
+			version = 0
+			knownHandlerList = PermitAllConnectivityManager,RemoteTechConnectivityManager,CommNetConnectivityManager
+			connectivityHandler = RemoteTechConnectivityManager
+		}
+		kOSCustomParameters
+		{
+			InstructionsPerUpdate = 200
+			migrated = True
+			version = 0
+			useCompressedPersistence = True
+			showStatistics = False
+			startOnArchive = False
+			obeyHideUi = True
+			enableSafeMode = True
+			audibleExceptions = True
+			verboseExceptions = True
+			useBlizzyToolbarOnly = False
+			debugEachOpcode = False
+		}
+		MissionParamsGeneral
+		{
+			enableFunding = False
+			startingFunds = 100000
+			spacer = 
+			enableKerbalLevels = False
+			kerbalLevelPilot = 4
+			kerbalLevelScientist = 4
+			kerbalLevelEngineer = 4
+			spacer2 = 
+			preventVesselRecovery = False
+		}
+		MissionParamsExtras
+		{
+			facilityOpenAC = False
+			astronautHiresAreFree = True
+			spacer = 
+			facilityOpenEditor = False
+			launchSitesOpen = True
+			spacer2 = 
+			cheatsEnabled = False
+		}
+		MissionParamsFacilities
+		{
+			facilityLevelAdmin = 3
+			facilityLevelAC = 3
+			facilityLevelLaunchpad = 3
+			facilityLevelMC = 3
+			facilityLevelRD = 3
+			facilityLevelRunway = 3
+			facilityLevelSPH = 3
+			facilityLevelTS = 3
+			facilityLevelVAB = 3
+		}
+	}
+	SCENARIO
+	{
+		name = CommNetScenario
+		scene = 7, 8, 5, 6
+	}
+	SCENARIO
+	{
+		name = PartUpgradeManager
+		scene = 6, 5, 7
+		UPGRADES
+		{
+			Unlocks
+			{
+			}
+			Enableds
+			{
+			}
+		}
+	}
+	SCENARIO
+	{
+		name = ResourceScenario
+		scene = 7, 8, 5, 6, 21
+		RESOURCE_SETTINGS
+		{
+			GameSeed = 1936988268
+			MaxDeltaTime = 21600
+		}
+	}
+	SCENARIO
+	{
+		name = ContractSystem
+		scene = 7, 8, 5, 6
+		update = 1246.2952490230625
+		version = 1.5.1
+		WEIGHTS
+		{
+			TourismContract = 30
+			SurveyContract = 30
+			StationContract = 30
+			SentinelContract = 30
+			SatelliteContract = 30
+			ISRUContract = 30
+			ExplorationContract = 30
+			BaseContract = 30
+			ARMContract = 30
+			RecoverAsset = 30
+			PlantFlag = 30
+			PartTest = 42
+			GrandTour = 30
+			CollectScience = 30
+			Eeloo = 30
+			Dres = 30
+			Pol = 30
+			Gilly = 30
+			Tylo = 30
+			Bop = 30
+			Vall = 30
+			Laythe = 30
+			Jool = 30
+			Ike = 30
+			Duna = 30
+			Eve = 30
+			Moho = 30
+			Minmus = 30
+			Mun = 30
+			Kerbin = 42
+			Sun = 30
+		}
+		CONTRACTS
+		{
+			CONTRACT
+			{
+				guid = 74a7e6b1-3e0b-461d-84da-55f97b701386
+				type = PartTest
+				prestige = 0
+				seed = -1510320313
+				state = Active
+				viewed = Read
+				agent = 集成积分企业
+				agentName = Integrated Integrals
+				deadlineType = Floating
+				expiryType = Floating
+				values = 42772.2773551941,9110495.07665634,8911.76463235827,23393.3810975753,9449.99957084656,3,5.828571,4,43328.1573551938,1085.65524902321,9111580.73190536,0
+				part = solidBooster1-1
+				haul = False
+				dest = 1
+				sit = FLYING
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = solidBooster1-1
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.40527250729746767
+					haul = False
+					repeatability = BODYANDSITUATION
+					notes = 如需进行测试，确认所有测试条件就绪后，在分级队列中启动该部件。
+					PARAM
+					{
+						name = ReachDestination
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = FLYING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 33000
+						maxAlt = 40000
+					}
+					PARAM
+					{
+						name = ReachSpeedEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minSpd = 430
+						maxSpd = 560
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = fd4180a0-e024-4093-815d-d745a322a4f9
+				type = PartTest
+				prestige = 0
+				seed = -1248578778
+				state = Offered
+				viewed = Read
+				agent = 集成积分企业
+				agentName = Integrated Integrals
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21386.138677597,9110495.07665634,8911.76463235827,23393.3810975753,9449.99957084656,3,5.828571,4,22436.2339266203,0,0,0
+				part = engineLargeSkipper.125m
+				haul = False
+				dest = 1
+				sit = FLYING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = engineLargeSkipper.125m
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.80581264142217701
+					haul = False
+					repeatability = BODYANDSITUATION
+					notes = 如需进行测试，确认所有测试条件就绪后，在分级队列中启动该部件。
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = FLYING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 8000
+						maxAlt = 13000
+					}
+					PARAM
+					{
+						name = ReachSpeedEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minSpd = 60
+						maxSpd = 170
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 8ccc02ea-a81b-4efc-8d89-92692df2a8b5
+				type = PartTest
+				prestige = 0
+				seed = -1510320353
+				state = Offered
+				viewed = Read
+				agent = 近点火箭供应公司
+				agentName = Periapsis Rocket Supplies Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,9201600,9000,22500,9000,3,6,4,22155.8799999998,0,0,0
+				part = parachuteSingle
+				haul = False
+				dest = 1
+				sit = FLYING
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = parachuteSingle
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.45659112579030503
+					haul = False
+					repeatability = ALWAYS
+					notes = 如需进行测试，确认所有测试条件就绪后，在分级队列中启动该部件。
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = FLYING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 6000
+						maxAlt = 11000
+					}
+					PARAM
+					{
+						name = ReachSpeedEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minSpd = 90
+						maxSpd = 220
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 08fc1038-81a1-44fc-a1e9-08b3f8afc4f9
+				type = PartTest
+				prestige = 0
+				seed = -1510261465
+				state = Offered
+				viewed = Read
+				agent = 马科索建筑玩具
+				agentName = Maxo Construction Toys
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,9000,22500,9000,3,6,4,43755.8799999998,0,0,0
+				part = Decoupler.1
+				haul = False
+				dest = 1
+				sit = FLYING
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = Decoupler.1
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.30532098063515545
+					haul = False
+					repeatability = BODYANDSITUATION
+					notes = 如需进行测试，确认所有测试条件就绪后，在分级队列中启动该部件。
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = FLYING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 10000
+						maxAlt = 17000
+					}
+					PARAM
+					{
+						name = ReachSpeedEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minSpd = 420
+						maxSpd = 1480
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 00a03d80-8dce-4932-9e33-d4c3957aee23
+				type = PartTest
+				prestige = 0
+				seed = -1510320327
+				state = Offered
+				viewed = Read
+				agent = 冬鸮飞行器商城
+				agentName = WinterOwl Aircraft Emporium
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21073.1712341309,8977170.94573975,1690.1407957077,4436.61938725224,1889.99991416931,1,1.009362,0.9708738,21629.0512341306,0,0,0
+				part = solidBooster.v2
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = solidBooster.v2
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.23213859239227072
+					haul = False
+					repeatability = ALWAYS
+					notes = 如需进行测试，确认所有测试条件就绪后，在分级队列中启动该部件。
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 7b0e7896-4d24-4fa8-8c1f-a1f58a9fd409
+				type = PartTest
+				prestige = 0
+				seed = -1510320336
+				state = Offered
+				viewed = Read
+				agent = 坎巴拉运动有限公司
+				agentName = Kerbal Motion LLC
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,9201600,1800,4500,1800,1,1,1,22155.8799999998,0,0,0
+				part = radialDecoupler
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = radialDecoupler
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.24965465592670005
+					haul = False
+					repeatability = ALWAYS
+					notes = 如需进行测试，确认所有测试条件就绪后，在分级队列中启动该部件。
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 7cb09f67-f517-4d6f-932a-66e9c47a37aa
+				type = SurveyContract
+				prestige = 0
+				seed = -1510320310
+				state = Offered
+				viewed = Read
+				agent = 支柱公司
+				agentName = StrutCo
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,46008000,7500,13912.4993681908,7874.99964237213,0,1.904762,2,130155.88,0,0,0
+				targetBody = 1
+				centerLatitude = -0.34220150057290127
+				centerLongitude = -75.425393040432212
+				dataName = 温度
+				anomalyName = 变动
+				reportName = 测量值
+				locationName = Kerbin^N
+				focusedSurvey = True
+				targetBand = LOW
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = 测量温度
+					experiment = temperatureScan
+					flightThreshold = 18700
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -1500038669
+					wpIndex = 0
+					wpTexture = thermometer
+					wpLatitude = -0.34217666446798728
+					wpLongitude = -75.42536387702846
+					wpLandlocked = False
+					wpNavigationId = 4af3d993-46b5-4640-9e62-5fd805278fe4
+				}
+			}
+			CONTRACT
+			{
+				guid = e819b838-fda0-4e94-b82c-2562c7cd45aa
+				type = PartTest
+				prestige = 1
+				seed = -1248578730
+				state = Offered
+				viewed = Read
+				agent = 集成积分企业
+				agentName = Integrated Integrals
+				deadlineType = Floating
+				expiryType = Floating
+				values = 42352.9412269592,9021176.48134232,11033.654008118,30342.5491799815,12375.0002682209,4,7.563636,5,43403.0364759825,0,0,0
+				part = solidBooster.sm.v2
+				haul = False
+				dest = 1
+				sit = FLYING
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = solidBooster.sm.v2
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.14423029923077221
+					haul = False
+					repeatability = BODYANDSITUATION
+					notes = 如需进行测试，确认所有测试条件就绪后，在分级队列中启动该部件。
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = FLYING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 44000
+						maxAlt = 48000
+					}
+					PARAM
+					{
+						name = ReachSpeedEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minSpd = 90
+						maxSpd = 190
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = f910424f-e4fb-4cd9-9c80-7a80992da2a2
+				type = PartTest
+				prestige = 1
+				seed = -1510320304
+				state = Offered
+				viewed = Read
+				agent = 坎灵顿模型火箭和纸制品有限公司
+				agentName = Kerlington Model Rockets and Paper Products Inc
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,9201600,11250,28125,11250,4,8,5,22155.8799999998,0,0,0
+				part = HeatShield0
+				haul = False
+				dest = 1
+				sit = FLYING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = HeatShield0
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.84372581813657932
+					haul = False
+					repeatability = ONCEPERPART
+					notes = 如需进行测试，确认所有测试条件就绪后，在部件的信息菜单中点击[运行测试]选项。
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = FLYING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 29000
+						maxAlt = 41000
+					}
+					PARAM
+					{
+						name = ReachSpeedEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minSpd = 1650
+						maxSpd = 2030
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = ec1cc2d7-6cdf-4139-9520-5e7176629fc5
+				type = ExplorationContract
+				prestige = 2
+				seed = -571645031
+				state = Offered
+				viewed = Read
+				agent = Kerbin世界第一纪录保持协会
+				agentName = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 43200,0,16800,31200,16800,6,10,0,43200.06,0,0,0
+				targetBody = 1
+				bodyRatio = 0
+				PARAM
+				{
+					name = ProgressTrackingParameter
+					state = Incomplete
+					values = 48000,0,6,10,0
+					targetBody = 1
+					targetType = ORBIT
+				}
+			}
+			CONTRACT
+			{
+				guid = ff44180c-e55c-458f-8c1e-5e8f448b7ae7
+				type = PartTest
+				prestige = 1
+				seed = -652126307
+				state = Offered
+				viewed = Unseen
+				agent = 坎巴拉动力
+				agentName = Kerbodyne
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,9201600,11250,28125,11250,4,8,5,22816.1352490231,0,0,0
+				part = radialDrogue
+				haul = False
+				dest = 1
+				sit = FLYING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = radialDrogue
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.43560366306249221
+					haul = False
+					repeatability = BODYANDSITUATION
+					notes = 如需进行测试，确认所有测试条件就绪后，在分级队列中启动该部件。
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = FLYING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 8000
+						maxAlt = 11000
+					}
+					PARAM
+					{
+						name = ReachSpeedEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minSpd = 170
+						maxSpd = 270
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = b4d9d1ee-e09f-4e4b-bdb8-fa7a54ea62b2
+				type = TourismContract
+				prestige = 1
+				seed = -650894248
+				state = Offered
+				viewed = Unseen
+				agent = 真空高级吸力系统公司
+				agentName = Vac-Co Advanced Suction Systems
+				deadlineType = Floating
+				expiryType = Floating
+				values = 42352.9412269592,45105882.4067116,0,0,0,0,21.44082,12,43569.1564759823,0,0,0
+				preposition = 到<2>>上
+				homeDestinations = True
+				isGeeAdventure = False
+				tourists = Xile Kerman|Lanxi Kerman|Jianglei Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 12188,0,0,0,0
+					kerbalName = Xile Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 4062,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Xile Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 12188,0,0,0,0
+					kerbalName = Lanxi Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 4062,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Lanxi Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 12188,0,0,0,0
+					kerbalName = Jianglei Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 4062,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Jianglei Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = c1da2902-6092-4959-b7d5-7d1d73dda881
+				type = ExplorationContract
+				prestige = 0
+				seed = -571645035
+				state = Completed
+				viewed = Read
+				agent = Kerbin世界第一纪录保持协会
+				agentName = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 86400,0,2240,4160,2240,1,2,0,86400.06,378.959999999919,0,0
+				targetBody = 1
+				bodyRatio = 0
+				PARAM
+				{
+					name = ProgressTrackingParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					targetBody = 1
+					targetType = SCIENCE
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = b30f20fb-e094-48e2-9fe5-6db00db1d465
+				type = ExplorationContract
+				prestige = 0
+				seed = -571645062
+				state = Completed
+				viewed = Read
+				agent = Kerbin世界第一纪录保持协会
+				agentName = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 108000,0,1120,2080,1120,1,1,0,108000.06,378.959999999919,0,0
+				targetBody = 1
+				bodyRatio = 0
+				PARAM
+				{
+					name = ProgressTrackingParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					targetBody = 1
+					targetType = FIRSTLAUNCH
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = af256df1-5587-4b3b-8a27-c7f42c87ebd4
+				type = ExplorationContract
+				prestige = 1
+				seed = -571645034
+				state = Completed
+				viewed = Read
+				agent = Kerbin世界第一纪录保持协会
+				agentName = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 129600,0,11200,20800,11200,4,8,0,129600.06,500.899999999808,0,0
+				targetBody = 1
+				bodyRatio = 0
+				PARAM
+				{
+					name = ProgressTrackingParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					targetBody = 1
+					targetType = REACHSPACE
+				}
+			}
+		}
+	}
+	SCENARIO
+	{
+		name = ScenarioContractEvents
+		scene = 7, 8, 5
+		id = -87283284
+	}
+	SCENARIO
+	{
+		name = Funding
+		scene = 7, 8, 5, 6
+		funds = 274915.81912149402
+	}
+	SCENARIO
+	{
+		name = ProgressTracking
+		scene = 7, 8, 5
+		Progress
+		{
+			FirstLaunch
+			{
+				completedManned = 555.87999999975784
+			}
+			FirstCrewToSurvive
+			{
+				completed = 486.25999999982116
+				crew
+				{
+					crews = Jebediah Kerman
+				}
+			}
+			RecordsAltitude
+			{
+				completed = 1216.13524902309
+				record = 70000
+			}
+			RecordsDepth
+			{
+				reached = 945.8752709958801
+				record = 0.080521445604972541
+			}
+			RecordsSpeed
+			{
+				completed = 1205.6352490230995
+				record = 2500
+			}
+			RecordsDistance
+			{
+				reached = 1027.3552490232616
+				record = 34987.581464679104
+			}
+			ReachedSpace
+			{
+				completedManned = 1216.13524902309
+				vessel
+				{
+					name = v2
+					flag = Squad/Flags/default
+				}
+				crew
+				{
+					crews = Jebediah Kerman
+				}
+			}
+			Kerbin
+			{
+				reached = 407.69999999989261
+				Splashdown
+				{
+					completed = 675.81979980433812
+				}
+				Science
+				{
+					completed = 486.25999999982116
+					vessel
+					{
+						name = Jebediah Kerman
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = Jebediah Kerman
+					}
+				}
+				SurfaceEVA
+				{
+					completed = 407.69999999989261
+					crew
+					{
+						crews = Jebediah Kerman
+					}
+				}
+			}
+		}
+	}
+	SCENARIO
+	{
+		name = ResearchAndDevelopment
+		scene = 7, 8, 5, 6
+		sci = 32.0214958
+		Tech
+		{
+			id = start
+			state = Available
+			cost = 0
+			part = Engineer7500
+			part = EngineerChip
+			part = RTShortAntenna1
+			part = basicFin
+			part = mk1pod
+			part = mk1pod.v2
+			part = solidBooster.sm.v2
+			part = solidBooster1-1Small
+			part = solidBoosterSmall
+			part = solidBooster.sm
+			part = GooExperiment
+			part = trussPiece1x
+			part = parachuteSingle
+			part = kv1Pod
+		}
+		Tech
+		{
+			id = engineering101
+			state = Available
+			cost = 5
+			part = SurfAntenna
+			part = stackDecoupler
+			part = longAntenna
+			part = sensorThermometer
+			part = Decoupler.1
+		}
+		Tech
+		{
+			id = basicRocketry
+			state = Available
+			cost = 5
+			part = fuelTankSmallFlat
+			part = solidBooster
+			part = solidBooster.v2
+			part = liquidEngine2
+		}
+		Tech
+		{
+			id = generalRocketry
+			state = Available
+			cost = 20
+			part = fuelTankSmall
+			part = solidBooster1-1
+			part = liquidEngine
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinSrfLandedLaunchPad
+			title = 在发射台的神秘黏性物质™观察结果
+			dsc = 1
+			scv = 0.230769247
+			sbv = 0.300000012
+			sci = 3
+			cap = 3.9000001
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfLandedLaunchPad
+			title = 在发射台的乘员报告
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedLaunchPad
+			title = 在发射台的EVA报告
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = recovery@KerbinFlew
+			title = 回收到在Kerbin上空飞行后返航的载具
+			dsc = 1
+			scv = 0.0277777519
+			sbv = 5
+			sci = 5.83333349
+			cap = 6
+		}
+		Science
+		{
+			id = crewReport@KerbinFlyingLowShores
+			title = 飞越Kerbin的海岸时的乘员报告
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 3.5
+			cap = 3.5
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinFlyingLow
+			title = 飞越Kerbin时的神秘黏性物质™观察结果
+			dsc = 1
+			scv = 0.0122895092
+			sbv = 0.699999988
+			sci = 8.9881649
+			cap = 9.09999943
+		}
+		Science
+		{
+			id = temperatureScan@KerbinFlyingLowWater
+			title = 飞越Kerbin的水边时的温度扫描
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 5.5999999
+			cap = 5.5999999
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfSplashedWater
+			title = 在Kerbin的水边的EVA报告
+			dsc = 1
+			scv = 0
+			sbv = 0.400000006
+			sci = 3.20000005
+			cap = 3.20000005
+		}
+	}
+	SCENARIO
+	{
+		name = VesselRecovery
+		scene = 5, 7, 8, 6
+	}
+	SCENARIO
+	{
+		name = Reputation
+		scene = 7, 8, 5, 6
+		rep = 55.9998589
+	}
+	SCENARIO
+	{
+		name = StrategySystem
+		scene = 7, 8, 5, 6
+		STRATEGIES
+		{
+		}
+	}
+	SCENARIO
+	{
+		name = ScenarioAchievements
+		scene = 7, 8, 5, 6
+	}
+	SCENARIO
+	{
+		name = ScenarioCustomWaypoints
+		scene = 7, 8, 21
+	}
+	SCENARIO
+	{
+		name = ScenarioDestructibles
+		scene = 5, 7, 6, 8
+		SpaceCenter/Administration/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/AstronautComplex/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_launchPad
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_sphereTank
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_waterTower
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/KSCFlagPoleLaunchPad
+		{
+			intact = True
+		}
+		SpaceCenter/MissionControl/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/SmallLab
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/CentralBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/MainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/CornerLab
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/WindTunnel
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/Observatory
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/SideLab
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_SE
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_NE
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_NW
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_SW
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/End09
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/End27
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section1
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section2
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section3
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section4
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/Tank
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/ksp_pad_waterTower
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/dish_array/dish_south
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/dish_array/dish_north
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/dish_array/dish_east
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/MainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/Tank
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/PodMemorial
+		{
+			intact = True
+		}
+		SpaceCenter/FlagPole/Facility
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/VAB2
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/OuterDish
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/Building
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/ForeverAlone
+		{
+			intact = True
+		}
+		SpaceCenter/MissionControl/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/Flag
+		{
+			intact = True
+		}
+		SpaceCenter/AstronautComplex/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/Administration/Facility/Building
+		{
+			intact = True
+		}
+	}
+	SCENARIO
+	{
+		name = ScenarioDiscoverableObjects
+		scene = 7, 8, 5
+		lastSeed = 0
+		sizeCurve
+		{
+			key = 0 0 1.5 1.5
+			key = 0.3 0.45 0.875 0.875
+			key = 0.7 0.55 0.875 0.875
+			key = 1 1 1.5 1.5
+		}
+	}
+	SCENARIO
+	{
+		name = ScenarioUpgradeableFacilities
+		scene = 5, 6, 7, 8
+		SpaceCenter/LaunchPad
+		{
+			lvl = 0
+		}
+		SpaceCenter/Runway
+		{
+			lvl = 0
+		}
+		SpaceCenter/VehicleAssemblyBuilding
+		{
+			lvl = 0
+		}
+		SpaceCenter/SpaceplaneHangar
+		{
+			lvl = 0
+		}
+		SpaceCenter/TrackingStation
+		{
+			lvl = 0
+		}
+		SpaceCenter/AstronautComplex
+		{
+			lvl = 0
+		}
+		SpaceCenter/MissionControl
+		{
+			lvl = 0
+		}
+		SpaceCenter/ResearchAndDevelopment
+		{
+			lvl = 0
+		}
+		SpaceCenter/Administration
+		{
+			lvl = 0
+		}
+		SpaceCenter/FlagPole
+		{
+			lvl = 0
+		}
+	}
+	SCENARIO
+	{
+		name = SentinelScenario
+		scene = 7, 8, 5
+		NextSpawnTime = 19368.195084780982
+	}
+	SCENARIO
+	{
+		name = InterVesselManager
+		scene = 7, 5, 8
+	}
+	SCENARIO
+	{
+		name = EntryCostManager
+		scene = 6, 5
+		TLUpgrade
+		{
+			name = MEMLanderHydrazine
+			currentTL = 4
+		}
+		TLUpgrade
+		{
+			name = MEMLanderUDMH+NTO
+			currentTL = 4
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineRV-1LqdHydrogen+LqdOxygen
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineRV-1Aerozine50+NTO
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineRV-1Kerosene+LqdOxygen
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineRK-7Aerozine50+NTO
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineRK-7Kerosene+LqdOxygen
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineRE-J10LqdHydrogen+LqdOxygen
+			currentTL = 5
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineRE-J10Aerozine50+NTO
+			currentTL = 5
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineRE-I2LqdHydrogen+LqdOxygen
+			currentTL = 5
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineRE-I2Aerozine50+NTO
+			currentTL = 5
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineRE-I2Kerosene+LqdOxygen
+			currentTL = 5
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineLV-TX87LqdHydrogen+LqdOxygen
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineLV-TX87Aerozine50+NTO
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineLV-TX87Kerosene+LqdOxygen
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineLV-T91LqdHydrogen+LqdOxygen
+			currentTL = 4
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineLV-T91Aerozine50+NTO
+			currentTL = 4
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineKE-1LqdHydrogen+LqdOx﻿ygen
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineKE-1Aerozine50+NTO
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = LiquidEngineKE-1Kerosene+LqdOxygen
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = RCSBlockAerozine50+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = RCSBlockMonoPropellant
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = RCSBlockUDMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = RCSBlockNitrousOxide
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = RCSBlockNitrogen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = RCSBlockHTP
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = RCSBlockHydrazine
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = RCSBlockMMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = linearRcsAerozine50+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = linearRcsMonoPropellant
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = linearRcsUDMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = linearRcsNitrousOxide
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = linearRcsNitrogen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = linearRcsHTP
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = linearRcsHydrazine
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = linearRcsMMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = LaunchEscapeSystemSolidFuel
+			currentTL = 2
+		}
+		TLUpgrade
+		{
+			name = vernierEngineAerozine+NTO
+			currentTL = 2
+		}
+		TLUpgrade
+		{
+			name = vernierEngineUDMH+NTO
+			currentTL = 2
+		}
+		TLUpgrade
+		{
+			name = vernierEngineMMH+NTO
+			currentTL = 2
+		}
+		TLUpgrade
+		{
+			name = vernierEngineLqdHydrogen+LqdOxygen
+			currentTL = 2
+		}
+		TLUpgrade
+		{
+			name = vernierEngineKerosene+LqdOxygen
+			currentTL = 2
+		}
+		TLUpgrade
+		{
+			name = sepMotor1SolidFuel
+			currentTL = 2
+		}
+		TLUpgrade
+		{
+			name = solidBooster-smSolidFuel
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = solidBoosterSmallSolidFuel
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = solidBoosterSolidFuel
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = solidBooster1-1SmallSolidFuel
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = solidBooster1-1SolidFuel
+			currentTL = 2
+		}
+		TLUpgrade
+		{
+			name = Size3EngineClusterLqdHydrogen+LqdOxygen
+			currentTL = 7
+		}
+		TLUpgrade
+		{
+			name = Size3EngineClusterAerozine50+NTO
+			currentTL = 7
+		}
+		TLUpgrade
+		{
+			name = Size3EngineClusterKerosene+LqdOxygen
+			currentTL = 7
+		}
+		TLUpgrade
+		{
+			name = Size3AdvancedEngineLqdHydrogen+LqdOxygen
+			currentTL = 7
+		}
+		TLUpgrade
+		{
+			name = Size3AdvancedEngineAerozine50+NTO
+			currentTL = 7
+		}
+		TLUpgrade
+		{
+			name = Size3AdvancedEngineKerosene+LqdOxygen
+			currentTL = 7
+		}
+		TLUpgrade
+		{
+			name = Size2LFBLqdHydrogen+LqdOxygen
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = Size2LFBAerozine50+NTO
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = Size2LFBKerosene+LqdOxygen
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = omsEngineAerozine50+NTO
+			currentTL = 4
+		}
+		TLUpgrade
+		{
+			name = omsEngineHTP
+			currentTL = 4
+		}
+		TLUpgrade
+		{
+			name = omsEngineHydrazine
+			currentTL = 4
+		}
+		TLUpgrade
+		{
+			name = MassiveBoosterSolidFuel
+			currentTL = 5
+		}
+		TLUpgrade
+		{
+			name = SSMELqdMethane+LqdOxygen
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = SSMEKerosene+LqdOxygen
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = SSMELqdHydrogen+LqdOxygen
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = engineLargeSkipper-125mLqdHydrogen+LqdOxygen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = engineLargeSkipper-125mMMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = engineLargeSkipper-125mKerosene+LqdOxygen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = engineLargeSkipperLqdHydrogen+LqdOxygen
+			currentTL = 5
+		}
+		TLUpgrade
+		{
+			name = engineLargeSkipperAerozine50+NTO
+			currentTL = 5
+		}
+		TLUpgrade
+		{
+			name = engineLargeSkipperKerosene+LqdOxygen
+			currentTL = 5
+		}
+		TLUpgrade
+		{
+			name = liquidEngine2-2LqdHydrogen+LqdOxygen
+			currentTL = 4
+		}
+		TLUpgrade
+		{
+			name = liquidEngine2-2Aerozine50+NTO
+			currentTL = 4
+		}
+		TLUpgrade
+		{
+			name = radialLiquidEngine1-2LqdHydrogen+LqdOxygen
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = radialLiquidEngine1-2Aerozine50+NTO
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = radialLiquidEngine1-2Kerosene+LqdOxygen
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = liquidEngine1-2LqdHydrogen+LqdOxygen
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = liquidEngine1-2Aerozine50+NTO
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = liquidEngine1-2Kerosene+LqdOxygen
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = liquidEngine2Kerosene+LqdOxygen
+			currentTL = 2
+		}
+		TLUpgrade
+		{
+			name = liquidEngine2Aerozine50+NTO
+			currentTL = 2
+		}
+		TLUpgrade
+		{
+			name = liquidEngine2Ethanol75+LqdOxygen
+			currentTL = 2
+		}
+		TLUpgrade
+		{
+			name = liquidEngineKerosene+LqdOxygen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = liquidEngineAerozine50+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = liquidEngineEthanol75+LqdOxygen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = nuclearEngineNTRLqdMethane
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = nuclearEngineNTRLqdAmmonia
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = nuclearEngineNTRLqdHydrogen
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = liquidEngine3LqdHydrogen+LqdOxygen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = liquidEngine3Aerozine50+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = radialEngineMiniAerozine50+NTO
+			currentTL = 4
+		}
+		TLUpgrade
+		{
+			name = microEngineAerozine50+NTO
+			currentTL = 4
+		}
+		TLUpgrade
+		{
+			name = toroidalAerospikeLqdHydrogen+LqdOxygen
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = toroidalAerospikeKerosene+LqdOxygen
+			currentTL = 6
+		}
+		TLUpgrade
+		{
+			name = liquidEngineMiniRescaleLqdHydrogen+LqdOxygen
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = liquidEngineMiniRescaleAerozine50+NTO
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = liquidEngineMiniRescaleKerosene+LqdOxygen
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = liquidEngineMiniLqdHydrogen+LqdOxygen
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = liquidEngineMiniAerozine50+NTO
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = liquidEngineMiniKerosene+LqdOxygen
+			currentTL = 3
+		}
+		TLUpgrade
+		{
+			name = smallRadialEngineLqdHydrogen+LqdOxygen
+			currentTL = 4
+		}
+		TLUpgrade
+		{
+			name = smallRadialEngineAerozine50+NTO
+			currentTL = 4
+		}
+		TLUpgrade
+		{
+			name = smallRadialEngineKerosene+LqdOxygen
+			currentTL = 4
+		}
+		Unlocks
+		{
+			SurfAntenna = True
+			stackDecoupler = True
+			longAntenna = True
+			sensorThermometer = True
+			Decoupler-1 = True
+			fuelTankSmallFlat = True
+			solidBooster = True
+			solidBooster-v2 = True
+			liquidEngine2 = True
+			fuelTankSmall = True
+			solidBooster1-1 = True
+			liquidEngine = True
+		}
+	}
+	FLIGHTSTATE
+	{
+		version = 1.5.1
+		UT = 1252.6952490230567
+		activeVessel = 1
+		mapViewFiltering = -1026
+		commNetUIModeTracking = Network
+		commNetUIModeFlight = Path
+		VESSEL
+		{
+			pid = f9086b1ea3de4cb382721cbc16bb668d
+			persistentId = 352532106
+			name = v1的残骸
+			type = Debris
+			sit = SPLASHED
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = True
+			met = 88.559799804608815
+			lct = 587.27999999972928
+			lastUT = 675.8397998043381
+			distanceTraveled = 22165.615367819086
+			root = 0
+			lat = 0.35996944534842396
+			lon = -72.566857033107738
+			alt = -1.571545745478943
+			hgt = -1.57154572
+			nrm = 0.0469731987,0.998842359,0.0103737712
+			rot = -0.699192822,-0.07185141,-0.109193668,0.70288229
+			CoM = -2.56039257E-05,-0.0680236369,-0.000109508634
+			stg = 2
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = NaN
+				ECC = 1
+				INC = 0.35996948611516888
+				LPE = 270
+				LAN = 305.73892573722668
+				MNA = 0
+				EPH = 1095.7752490231994
+				REF = 1
+			}
+			PART
+			{
+				name = Decoupler.1
+				cid = 4293815440
+				uid = 1153415697
+				mid = 1826896190
+				persistentId = 317886676
+				launchID = 2
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 1
+				resPri = 0
+				dstg = 1
+				sqor = 1
+				sepI = 1
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = top, -1
+				attN = bottom, 1
+				mass = 0.0399999991
+				shielded = False
+				temp = 457.49354274647919
+				tempExt = 441.76008644636244
+				tempExtUnexp = 443.32742455178959
+				expt = 0.5
+				state = 1
+				PreFailState = 0
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = Decoupler.1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					ejectionForcePercent = 100
+					isDecoupled = True
+					stagingEnabled = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleToggleCrossfeed
+					isEnabled = True
+					crossfeedStatus = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = tjs_DecouplerLight
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KJRDecouplerReinforcementModule
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = fuelTankSmallFlat
+				cid = 4294241286
+				uid = 3745716625
+				mid = 1826896190
+				persistentId = 1972548645
+				launchID = 2
+				parent = 0
+				position = 0,-0.36250019073486328,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 1
+				resPri = 0
+				dstg = 2
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = top, 0
+				attN = bottom, -1
+				mass = 0.00930232555
+				shielded = False
+				temp = 450.95860287081001
+				tempExt = 371.18020261639873
+				tempExtUnexp = 371.29641094948596
+				expt = 0.5
+				state = 1
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = fuelTankSmallFlat
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModulePartVariants
+					isEnabled = True
+					useVariantMass = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFuelTanks
+					isEnabled = True
+					type = Default
+					utilization = 86
+					mass = 0.00930232555
+					_numberOfAddedMLILayers = 0
+					partPrevTemperature = -1
+					stagingEnabled = True
+					volume = 500
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					TANK
+					{
+						name = LqdOxygen
+						note = (lacks insulation)
+						utilization = 1
+						mass = 1.40000002E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 90.1500015
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Kerosene
+						note = 
+						utilization = 1
+						mass = 1.20000004E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = LqdHydrogen
+						note = (basic insulation)
+						utilization = 1
+						mass = 1.99999999E-06
+						cost = 0
+						loss_rate = 0
+						temperature = 20.1499996
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = NTO
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = UDMH
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Aerozine50
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MMH
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = HTP
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = AvGas
+						note = 
+						utilization = 1
+						mass = 7.99999998E-06
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = IRFNA-III
+						note = 
+						utilization = 1
+						mass = 1.99999995E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = NitrousOxide
+						note = (pressurized)
+						utilization = 100
+						mass = 2.99999992E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Aniline
+						note = 
+						utilization = 1
+						mass = 1.99999995E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Ethanol75
+						note = 
+						utilization = 1
+						mass = 1.29999999E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Ethanol90
+						note = 
+						utilization = 1
+						mass = 1.29999999E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Ethanol
+						note = 
+						utilization = 1
+						mass = 1.29999999E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = LqdAmmonia
+						note = (lacks insulation)
+						utilization = 1
+						mass = 1.20000004E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 237.649994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = LqdMethane
+						note = (lacks insulation)
+						utilization = 1
+						mass = 1.20000004E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 111.449997
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = ClF3
+						note = 
+						utilization = 1
+						mass = 3.9999999E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = ClF5
+						note = 
+						utilization = 1
+						mass = 3.9999999E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Diborane
+						note = (lacks insulation)
+						utilization = 1
+						mass = 1.80000006E-05
+						cost = 0
+						loss_rate = 2.3000000000000001E-10
+						temperature = 180.649994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Pentaborane
+						note = 
+						utilization = 1
+						mass = 1.80000006E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Ethane
+						note = (lacks insulation)
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 2.5000000000000002E-10
+						temperature = 184.649994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Ethylene
+						note = (lacks insulation)
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 3.4999999999999998E-10
+						temperature = 169.449997
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = OF2
+						note = (lacks insulation)
+						utilization = 1
+						mass = 1.80000006E-05
+						cost = 0
+						loss_rate = 1.0000000000000001E-09
+						temperature = 128.399994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = LqdFluorine
+						note = (lacks insulation)
+						utilization = 1
+						mass = 3.9999999E-05
+						cost = 0
+						loss_rate = 5.4999999999999996E-09
+						temperature = 85.0400009
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = N2F4
+						note = (lacks insulation)
+						utilization = 1
+						mass = 9.99999975E-06
+						cost = 0
+						loss_rate = 1.7000000000000001E-10
+						temperature = 200.149994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Methanol
+						note = 
+						utilization = 1
+						mass = 1.20000004E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Furfuryl
+						note = 
+						utilization = 1
+						mass = 1.40000002E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = UH25
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Tonka250
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Tonka500
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = FLOX30
+						note = (lacks insulation)
+						utilization = 1
+						mass = 1.65000001E-05
+						cost = 0
+						loss_rate = 1E-10
+						temperature = 216.149994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = FLOX70
+						note = (lacks insulation)
+						utilization = 1
+						mass = 3.84999985E-05
+						cost = 0
+						loss_rate = 1E-10
+						temperature = 216.149994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = FLOX88
+						note = (lacks insulation)
+						utilization = 1
+						mass = 4.84000011E-05
+						cost = 0
+						loss_rate = 1E-10
+						temperature = 216.149994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = IWFNA
+						note = 
+						utilization = 1
+						mass = 1.99999995E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = IRFNA-IV
+						note = 
+						utilization = 1
+						mass = 1.99999995E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = AK20
+						note = 
+						utilization = 1
+						mass = 1.99999995E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = AK27
+						note = 
+						utilization = 1
+						mass = 1.99999995E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MON1
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MON3
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MON10
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MON15
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MON20
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MON25
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Hydyne
+						note = 
+						utilization = 1
+						mass = 1.29999999E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Syntin
+						note = 
+						utilization = 1
+						mass = 1.20000004E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = LiquidFuel
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Oxidizer
+						note = 
+						utilization = 1
+						mass = 1.6E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = LeadBallast
+						note = 
+						utilization = 1
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 554.759999999759
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0.349999666
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+				SolverFlightSys
+				{
+				}
+				UllageModule
+				{
+				}
+				kOSVesselModule
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 87940b006ef14c0d97669579e78e44a5
+			persistentId = 2736917338
+			name = v2
+			type = Ship
+			sit = SUB_ORBITAL
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = False
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 96.539999999912197
+			lct = 1156.1552490231445
+			lastUT = 1252.6952490230567
+			distanceTraveled = 156396.56462432959
+			root = 0
+			lat = 0.086830694437452061
+			lon = -74.985260304251597
+			alt = 153862.62261977501
+			hgt = -1
+			nrm = 0.311856359,0.215668559,0.925328434
+			rot = 0.967189252,-0.190095961,-0.00547139486,-0.168459475
+			CoM = -0.00321979821,-2.33539319,-0.00766432285
+			stg = 2
+			prst = False
+			ref = 4170882995
+			ctrl = True
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0.6959998
+			cHdg = 7.056
+			cMod = 0
+			ORBIT
+			{
+				SMA = 758325.59552193969
+				ECC = 0.9989994608371825
+				INC = 25.442687663717699
+				LPE = 182.78086774127379
+				LAN = 35.759232356730649
+				MNA = 0.5659223027634056
+				EPH = 1252.6952490230567
+				REF = 1
+			}
+			PART
+			{
+				name = mk1pod.v2
+				cid = 4294436012
+				uid = 4170882995
+				mid = 912941927
+				persistentId = 3744078724
+				launchID = 3
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = bottom, 4
+				attN = top, 3
+				mass = 0.800000012
+				shielded = False
+				temp = 341.23605648115313
+				tempExt = 340.87568679014026
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = mk1pod.v2
+				modCost = 100.399994
+				crew = Jebediah Kerman
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					hibernation = False
+					hibernateOnWarp = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						HibernateToggle
+						{
+							actionGroup = None
+							active = False
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					actuatorModeCycle = 0
+					authorityLimiter = 100
+					stateString = 空闲
+					stagingEnabled = True
+					WheelState = Active
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						CycleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						Activate
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						Deactivate
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						Toggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleColorChanger
+					isEnabled = True
+					animState = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = Light
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ResetAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceContainer
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						CollectAllAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleConductionMultiplier
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModulePartVariants
+					isEnabled = True
+					useVariantMass = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TrajectoriesVesselSettings
+					isEnabled = True
+					Initialized = True
+					EntryAngle = 3.1415926535897931
+					EntryHorizon = False
+					HighAngle = 3.1415926535897931
+					HighHorizon = False
+					LowAngle = 3.1415926535897931
+					LowHorizon = False
+					GroundAngle = 3.1415926535897931
+					GroundHorizon = False
+					ProgradeEntry = False
+					RetrogradeEntry = True
+					TargetBody = 
+					TargetPosition_x = 0
+					TargetPosition_y = 0
+					TargetPosition_z = 0
+					ManualTargetTxt = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFuelTanks
+					isEnabled = True
+					type = ServiceModule
+					utilization = 86
+					mass = 0.800000012
+					_numberOfAddedMLILayers = 0
+					partPrevTemperature = -1
+					stagingEnabled = True
+					volume = 50.049999999999997
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					TANK
+					{
+						name = LqdOxygen
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 7.89999976E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 90.1500015
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Kerosene
+						note = (pressurized)
+						utilization = 1
+						mass = 7.6999997E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = LqdHydrogen
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 6.70000009E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 20.1499996
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = NTO
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = UDMH
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Hydrazine
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 50
+						maxAmount = 50
+					}
+					TANK
+					{
+						name = Aerozine50
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MMH
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = HTP
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = AvGas
+						note = (pressurized)
+						utilization = 1
+						mass = 7.30000029E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Nitrogen
+						note = (pressurized)
+						utilization = 200
+						mass = 9.50000031E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = IRFNA-III
+						note = (pressurized)
+						utilization = 1
+						mass = 8.49999997E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = NitrousOxide
+						note = (pressurized)
+						utilization = 100
+						mass = 9.50000031E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Aniline
+						note = (pressurized)
+						utilization = 1
+						mass = 8.49999997E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Ethanol75
+						note = (pressurized)
+						utilization = 1
+						mass = 7.79999973E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Ethanol90
+						note = (pressurized)
+						utilization = 1
+						mass = 7.79999973E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Ethanol
+						note = (pressurized)
+						utilization = 1
+						mass = 7.79999973E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = LqdAmmonia
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 7.6999997E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 237.649994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = LqdMethane
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 7.6999997E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 111.449997
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Helium
+						note = (pressurized)
+						utilization = 200
+						mass = 0.000115000003
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = ClF3
+						note = (pressurized)
+						utilization = 1
+						mass = 0.000104999999
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = ClF5
+						note = (pressurized)
+						utilization = 1
+						mass = 0.000104999999
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Diborane
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 8.2999999E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 180.649994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Pentaborane
+						note = (pressurized)
+						utilization = 1
+						mass = 8.2999999E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Ethane
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 184.649994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Ethylene
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 169.449997
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = OF2
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 8.2999999E-05
+						cost = 0
+						loss_rate = 1.6E-11
+						temperature = 128.399994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = LqdFluorine
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 0.000104999999
+						cost = 0
+						loss_rate = 8.8000000000000006E-11
+						temperature = 85.0400009
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = N2F4
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 7.50000036E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 200.149994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Methanol
+						note = (pressurized)
+						utilization = 1
+						mass = 7.6999997E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Furfuryl
+						note = (pressurized)
+						utilization = 1
+						mass = 7.89999976E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = UH25
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Tonka250
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Tonka500
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = FLOX30
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 8.15000021E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 216.149994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = FLOX70
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 0.000103500002
+						cost = 0
+						loss_rate = 0
+						temperature = 216.149994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = FLOX88
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 0.000113399998
+						cost = 0
+						loss_rate = 0
+						temperature = 216.149994
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = IWFNA
+						note = (pressurized)
+						utilization = 1
+						mass = 8.49999997E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = IRFNA-IV
+						note = (pressurized)
+						utilization = 1
+						mass = 8.49999997E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = AK20
+						note = (pressurized)
+						utilization = 1
+						mass = 8.49999997E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = AK27
+						note = (pressurized)
+						utilization = 1
+						mass = 8.49999997E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = CaveaB
+						note = (pressurized)
+						utilization = 1
+						mass = 8.49999997E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MON1
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MON3
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MON10
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MON15
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MON20
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MON25
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = ArgonGas
+						note = (pressurized)
+						utilization = 100
+						mass = 2.99999992E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = KryptonGas
+						note = (pressurized)
+						utilization = 100
+						mass = 2.99999992E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Hydrogen
+						note = (pressurized)
+						utilization = 100
+						mass = 2.99999992E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Oxygen
+						note = (pressurized)
+						utilization = 200
+						mass = 2.99999992E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Food
+						note = (pressurized)
+						utilization = 1
+						mass = 9.99999975E-06
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Water
+						note = (pressurized)
+						utilization = 1
+						mass = 9.99999975E-06
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = CarbonDioxide
+						note = (pressurized)
+						utilization = 200
+						mass = 2.99999992E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = False
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Waste
+						note = (pressurized)
+						utilization = 1
+						mass = 9.99999975E-06
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = False
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = WasteWater
+						note = (pressurized)
+						utilization = 1
+						mass = 9.99999975E-06
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = False
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Hydyne
+						note = (pressurized)
+						utilization = 1
+						mass = 7.79999973E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Syntin
+						note = (pressurized)
+						utilization = 1
+						mass = 7.6999997E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = LiquidFuel
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Oxidizer
+						note = (pressurized)
+						utilization = 1
+						mass = 8.09999983E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MonoPropellant
+						note = (pressurized)
+						utilization = 1
+						mass = 7.6999997E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = XenonGas
+						note = (pressurized)
+						utilization = 100
+						mass = 2.99999992E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = ElectricCharge
+						note = (pressurized)
+						utilization = 1000
+						mass = 0.00288999989
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 49.968972000078338
+						maxAmount = 50
+					}
+					TANK
+					{
+						name = LeadBallast
+						note = (pressurized)
+						utilization = 1
+						mass = 6.50000002E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MechJebCore
+					isEnabled = True
+					running = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OnOrbitProgradeAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnOrbitRetrogradeAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnOrbitNormalAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnOrbitAntinormalAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnOrbitRadialInAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnOrbitRadialOutAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnKillRotationAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnDeactivateSmartASSAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnPanicAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnTranslatronOffAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnTranslatronKeepVertAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnTranslatronZeroSpeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnTranslatronPlusOneSpeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnTranslatronMinusOneSpeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnTranslatronToggleHSAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						OnAscentAPToggleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					MechJebLocalSettings
+					{
+						MechJebModuleMenu
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAirplaneAutopilot
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAirplaneGuidance
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAscentClassic
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAscentClassicMenu
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAscentGT
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAscentGTMenu
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAscentNavBall
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAscentPEG
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAscentPEGMenu
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleDebugArrows
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAscentAutopilot
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAscentGuidance
+						{
+							unlockParts = 
+							unlockTechs = unmannedTech
+						}
+						MechJebModuleAttitudeAdjustment
+						{
+							unlockParts = 
+							unlockTechs = advFlightControl
+						}
+						MechJebModuleCustomWindowEditor
+						{
+							unlockParts = 
+							unlockTechs = flightControl
+						}
+						MechJebModuleDockingAutopilot
+						{
+							forceRol = False
+							overrideSafeDistance = False
+							overrideTargetSize = False
+							unlockParts = 
+							unlockTechs = 
+							rol
+							{
+								_val = 0
+								_text = 0
+							}
+						}
+						MechJebModuleDockingGuidance
+						{
+							unlockParts = 
+							unlockTechs = advUnmanned
+						}
+						MechJebModuleInfoItems
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleLandingAutopilot
+						{
+							deployGears = True
+							deployChutes = True
+							rcsAdjustment = True
+							unlockParts = 
+							unlockTechs = 
+							touchdownSpeed
+							{
+								_val = 0.5
+								_text = 0.5
+							}
+							limitGearsStage
+							{
+								val = 0
+								_text = 0
+							}
+							limitChutesStage
+							{
+								val = 0
+								_text = 0
+							}
+						}
+						MechJebModuleLandingGuidance
+						{
+							landingSiteIdx = 0
+							unlockParts = 
+							unlockTechs = unmannedTech
+						}
+						MechJebModuleLandingPredictions
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleManeuverPlanner
+						{
+							unlockParts = 
+							unlockTechs = advFlightControl
+						}
+						MechJebModuleNodeEditor
+						{
+							unlockParts = 
+							unlockTechs = advFlightControl
+						}
+						MechJebModuleNodeExecutor
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleRCSBalancerWindow
+						{
+							unlockParts = 
+							unlockTechs = advFlightControl
+						}
+						MechJebModuleRendezvousAutopilot
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleRendezvousAutopilotWindow
+						{
+							unlockParts = 
+							unlockTechs = advUnmanned
+						}
+						MechJebModuleRendezvousGuidance
+						{
+							unlockParts = 
+							unlockTechs = advUnmanned
+						}
+						MechJebModuleRoverController
+						{
+							ControlHeading = False
+							ControlSpeed = False
+							BrakeOnEject = False
+							BrakeOnEnergyDepletion = False
+							WarpToDaylight = False
+							StabilityControl = False
+							LimitAcceleration = False
+							unlockParts = 
+							unlockTechs = 
+							heading
+							{
+								_val = 0
+								_text = 0
+							}
+							speed
+							{
+								_val = 10
+								_text = 10
+							}
+						}
+						MechJebModuleRoverWindow
+						{
+							unlockParts = 
+							unlockTechs = fieldScience
+						}
+						MechJebModuleScript
+						{
+							minifiedGUI = False
+							selectedSlot = 0
+							selectedMemorySlotType = 0
+							vesselSaveName = v2
+							activeSavepoint = -1
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSettings
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSmartASS
+						{
+							mode = ORBITAL
+							target = OFF
+							advReference = INERTIAL
+							advDirection = FORWARD
+							forceRol = False
+							forcePitch = True
+							forceYaw = True
+							unlockParts = 
+							unlockTechs = flightControl
+							srfHdg
+							{
+								_val = 90
+								_text = 90
+							}
+							srfPit
+							{
+								_val = 90
+								_text = 90
+							}
+							srfRol
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelYaw
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelPit
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelRol
+							{
+								_val = 0
+								_text = 0
+							}
+							rol
+							{
+								_val = 0
+								_text = 0
+							}
+						}
+						MechJebModuleSmartRcs
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSpaceplaneAutopilot
+						{
+							bBreakAsSoonAsLanded = False
+							unlockParts = 
+							unlockTechs = 
+							glideslope
+							{
+								_val = 3
+								_text = 3
+							}
+							approachSpeed
+							{
+								_val = 80
+								_text = 80
+							}
+							touchdownSpeed
+							{
+								_val = 60
+								_text = 60
+							}
+							maximumSafeBankAngle
+							{
+								_val = 25
+								_text = 25
+							}
+						}
+						MechJebModuleSpaceplaneGuidance
+						{
+							runwayIndex = 0
+							unlockParts = 
+							unlockTechs = unmannedTech
+						}
+						MechJebModuleStageStats
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleTargetController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleThrustWindow
+						{
+							autostageSavedState = False
+							unlockParts = 
+							unlockTechs = advFlightControl
+						}
+						MechJebModuleTranslatron
+						{
+							unlockParts = 
+							unlockTechs = advFlightControl
+							trans_spd
+							{
+								_val = 0
+								_text = 0
+							}
+						}
+						MechJebModuleWarpHelper
+						{
+							unlockParts = 
+							unlockTechs = advFlightControl
+							phaseAngle
+							{
+								_val = 0
+								_text = 0
+							}
+						}
+						MechJebModuleWaypointWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWaypointHelpWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						ModExtensionDemo
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						MechJebModuleWarpController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleDeployableAntennaController
+						{
+							prev_shouldDeploy = False
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSolarPanelController
+						{
+							prev_shouldDeploy = False
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleThrustController
+						{
+							limitThrottle = False
+							limiterMinThrottle = False
+							electricThrottle = False
+							unlockParts = 
+							unlockTechs = 
+							maxThrottle
+							{
+								_val = 1
+								_text = 100
+							}
+							minThrottle
+							{
+								_val = 0.050000000000000003
+								_text = 5
+							}
+							electricThrottleLo
+							{
+								_val = 0.050000000000000003
+								_text = 5
+							}
+							electricThrottleHi
+							{
+								_val = 0.14999999999999999
+								_text = 15
+							}
+						}
+						MechJebModuleRCSController
+						{
+							unlockParts = 
+							unlockTechs = 
+							Tf
+							{
+								_val = 1
+								_text = 1
+							}
+							Kp
+							{
+								_val = 0.125
+								_text = 0.125
+							}
+							Ki
+							{
+								_val = 0.070000000000000007
+								_text = 0.07
+							}
+							Kd
+							{
+								_val = 0.53000000000000003
+								_text = 0.53
+							}
+						}
+						MechJebModuleRCSBalancer
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAttitudeController
+						{
+							unlockParts = 
+							unlockTechs = 
+							MJAttitudeController
+							{
+							}
+							KosAttitudeController
+							{
+							}
+							HybridController
+							{
+							}
+						}
+						MechJebModuleStagingController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleFlightRecorder
+						{
+							markUT = 1156.1752490231445
+							deltaVExpended = 3123.4688447857611
+							dragLosses = 146.13853232008361
+							gravityLosses = 745.47687558999894
+							steeringLosses = 246.33274604467397
+							markLAN = 72.957110595703128
+							markLatitude = -0.09720736496348284
+							markLongitude = -74.557684190212996
+							markAltitude = 72.103344652662059
+							markBodyIndex = 1
+							maxDragGees = 0.57732762590158615
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleFlightRecorderGraph
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlightEngineerModule
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = kOSProcessor
+					isEnabled = True
+					bootFile = None
+					diskSpace = 10000000
+					baseDiskSpace = 10000000
+					baseModuleMass = 0
+					additionalCost = 0
+					MaxPartId = 100
+					RequiredPower = 0.000200000009
+					stagingEnabled = True
+					activated = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						Deactivate
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						Toggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						TogglePower
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					harddisk
+					{
+						dirname = 
+						capacity = 10000000
+						volumeName = 
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Log
+					{
+						flight = 0
+						0 = Flight,Kerbin
+						0 = Suborbit,Kerbin
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = Hydrazine
+					amount = 50
+					maxAmount = 50
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 49.968972000078338
+					maxAmount = 50
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = GooExperiment
+				cid = 4294433140
+				uid = 4237526044
+				mid = 912941927
+				persistentId = 3582694144
+				launchID = 3
+				parent = 0
+				position = -0.34279471635818481,0.01486968994140625,-0.19791267812252045
+				rotation = -0.121066101,-0.495090187,0.0698975325,-0.857521474
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sym = 2
+				srfN = srfAttach, 0
+				mass = 0.0500000007
+				shielded = False
+				temp = 349.88170425226286
+				tempExt = 343.97822741118347
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = GooExperiment
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					aniState = LOCKED
+					animSwitch = True
+					animTime = 0
+					animSpeed = 1
+					deployPercent = 100
+					animationIsDisabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ResetAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = GooExperiment
+				cid = 4294294198
+				uid = 1224776365
+				mid = 912941927
+				persistentId = 330695209
+				launchID = 3
+				parent = 0
+				position = 0.34279477596282959,0.01486968994140625,-0.19791263341903687
+				rotation = 0.121066093,-0.495090246,0.0698975474,0.857521474
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sym = 1
+				srfN = srfAttach, 0
+				mass = 0.0500000007
+				shielded = False
+				temp = 349.89428601945508
+				tempExt = 343.98204061450866
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = GooExperiment
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					aniState = LOCKED
+					animSwitch = True
+					animTime = 0
+					animSpeed = 1
+					deployPercent = 100
+					animationIsDisabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ResetAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = parachuteSingle
+				cid = 4294283046
+				uid = 3163500733
+				mid = 912941927
+				persistentId = 3926390679
+				launchID = 3
+				parent = 0
+				position = 0,0.65745735168457031,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = -1
+				sidx = 0
+				attm = 0
+				srfN = srfAttach, -1
+				attN = bottom, 0
+				mass = 0.100000001
+				shielded = False
+				temp = 342.10992229204703
+				tempExt = 340.70145235883513
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = parachuteSingle
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleParachute
+					isEnabled = True
+					persistentState = STOWED
+					animTime = 0
+					minAirPressureToOpen = 0.469999999
+					deployAltitude = 2300
+					spreadAngle = 7
+					automateSafeDeploy = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						CutAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDragModifier
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDragModifier
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = Decoupler.1
+				cid = 4293815440
+				uid = 3830952412
+				mid = 912941927
+				persistentId = 317886676
+				launchID = 3
+				parent = 0
+				position = 0,-0.45503807067871094,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 1
+				resPri = 0
+				dstg = 1
+				sqor = 1
+				sepI = 1
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = top, 0
+				attN = bottom, 5
+				mass = 0.0399999991
+				shielded = False
+				temp = 336.64308680071628
+				tempExt = 335.34765922095079
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = Decoupler.1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					ejectionForcePercent = 100
+					isDecoupled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleToggleCrossfeed
+					isEnabled = True
+					crossfeedStatus = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = tjs_DecouplerLight
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KJRDecouplerReinforcementModule
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = solidBooster1-1
+				cid = 4293323172
+				uid = 1547168151
+				mid = 912941927
+				persistentId = 3077800161
+				launchID = 3
+				parent = 4
+				position = 0,-4.4250383377075195,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				resPri = 0
+				dstg = 2
+				sqor = 2
+				sepI = 1
+				sidx = 0
+				attm = 0
+				srfN = srfAttach, -1
+				attN = bottom, -1
+				attN = top, 4
+				mass = 1.22000003
+				shielded = False
+				temp = 330.60469237536222
+				tempExt = 330.39820425328639
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 1
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = solidBooster1-1
+				modCost = 509.862762
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesRF
+					isEnabled = True
+					ignitions = 0
+					staged = True
+					flameout = True
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					stagingEnabled = True
+					ignited = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ActivateAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					Ullage
+					{
+						UllageSim
+						{
+							ullageHeightMin = 0
+							ullageHeightMax = 0
+							ullageRadialMin = 0
+							ullageRadialMax = 0
+							UT = -1.7976931348623157E+308
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSurfaceFX
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = EngineLightEffect
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleEngineConfigs
+					isEnabled = True
+					configuration = SolidFuel
+					techLevel = 2
+					thrustRating = maxThrust
+					modded = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFuelTanks
+					isEnabled = True
+					type = Solid
+					utilization = 86
+					mass = 1.22000003
+					_numberOfAddedMLILayers = 0
+					partPrevTemperature = -1
+					stagingEnabled = True
+					volume = 3581
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					TANK
+					{
+						name = SolidFuel
+						note = 
+						utilization = 1
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 3581
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = SolidFuel
+					amount = 0
+					maxAmount = 3581
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = basicFin
+				cid = 4293316130
+				uid = 1869309465
+				mid = 912941927
+				persistentId = 1301508419
+				launchID = 3
+				parent = 5
+				position = -0.58316260576248169,-6.8560943603515625,0.15625810623168945
+				rotation = 0,-0.130524993,0,-0.991445005
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				resPri = 0
+				dstg = 2
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 5
+				mass = 0.00999999978
+				shielded = False
+				temp = 329.54095148353889
+				tempExt = 329.01070029082166
+				tempExtUnexp = 4
+				expt = 0.100000001
+				state = 1
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = basicFin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 1156.09524902314
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+				SolverFlightSys
+				{
+				}
+				UllageModule
+				{
+				}
+				CommNetVessel
+				{
+					controlState = KerbalFull
+					canComm = True
+				}
+				kOSVesselModule
+				{
+				}
+			}
+		}
+	}
+	LoaderInfo
+	{
+		ModuleManager v3.1.0.0 = True
+		ModuleManager v4.0.3.0 = True
+		MiniAVC v1.0.3.2 = True
+		CameraTools v1.11.0.0 = True
+		Chatterer v0.9.97.0 = True
+		DistantObject v1.9.1.14505 = True
+		EngineLight v1.0.0.0 = True
+		Atmosphere v1.4.2.2 = True
+		CelestialShadows v1.4.2.2 = True
+		CityLights v1.4.2.2 = True
+		EVEManager v1.4.2.2 = True
+		PartFX v1.4.2.2 = True
+		PQSManager v1.4.2.2 = True
+		ShaderLoader v1.4.2.2 = True
+		Terrain v1.4.2.2 = True
+		TextureConfig v1.4.2.2 = True
+		Utils v1.4.2.2 = True
+		_BuildManager v1.4.2.2 = True
+		KerbalEngineer v1.1.5.7 = True
+		KerbalEngineer.Unity v1.0.0.0 = True
+		KerbalJointReinforcement v3.4.1.0 = True
+		ICSharpCode.SharpZipLib v0.86.0.518 / v0.86.0 = True
+		kOS v1.1.5.2 = True
+		kOS.Safe v1.1.5.2 = True
+		MechJeb2 v2.5.1.0 / v / v2.8.1.0 = True
+		MiniAVC v1.2.0.6 = True
+		SolverEngines v3.3.0.0 / v3.7.2.0 = True
+		RealFuels v12.7.3.3 / v12.7.2.3-cd0c = True
+		RemoteTech v1.9.0.0 / v1.9.0 = True
+		SmokeScreen v2.8.2.0 = True
+		TrajectoriesBootstrap v1.0.0.0 = True
+		CameraTools = True
+		Chatterer = True
+		CommunityResourcePack = True
+		DistantObject = True
+		EngineLight = True
+		EnvironmentalVisualEnhancements = True
+		KerbalEngineer = True
+		KerbalJointReinforcement = True
+		kOS = True
+		MechJeb2 = True
+		MechJebForAll = True
+		RealFuels = True
+		RealFuels-Stockalike = True
+		RealPlume = True
+		RealPlume-RFStockalike = True
+		RealPlume-Stock = True
+		RealScaleBoosters = True
+		RealScaleBoostersStockalike = True
+		RemoteTech = True
+		RSS-Textures = True
+		RSSeaDragon = True
+		SmokeScreen = True
+		SolverEngines = True
+		StockVisualEnhancements = False
+		Trajectories = True
+		zzRFStockalike = True
+		MechJeb2汉化说明.txt = True
+		ModuleManager.3.1.0.dll = True
+		ModuleManager.4.0.3.dll = True
+		ModuleManager.ConfigCache = True
+		ModuleManager.ConfigSHA = True
+		ModuleManager.Physics = True
+		ModuleManager.TechTree = True
+		scatterer v0.0.0.0 = True
+		BoulderCo = True
+		scatterer = True
+	}
+	ROSTER
+	{
+		KERBAL
+		{
+			name = Jebediah Kerman
+			gender = Male
+			type = Crew
+			trait = Pilot
+			brave = 0.5
+			dumb = 0.5
+			badS = True
+			veteran = True
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = 0
+			extraXP = 0
+			suit = Default
+			hero = True
+			EVACHUTE
+			{
+				name = ModuleEvaChute
+				isEnabled = True
+				chuteYawRateAtMaxSpeed = 1
+				chuteMaxSpeedForYawRate = 50
+				chuteYawRateAtMinSpeed = 1
+				chuteMinSpeedForYawRate = 1
+				chuteRollRate = 1
+				chutePitchRate = 1
+				chuteDefaultForwardPitch = 9
+				semiDeployedChuteForwardPitch = 25
+				chutePitchRateDivisorWhenTurning = 1
+				chuteRollRateDivisorWhenPitching = 1
+				chuteYawRateDivisorWhenPitching = 1
+				persistentState = STOWED
+				animTime = 0
+				minAirPressureToOpen = 0.0399999991
+				deployAltitude = 1000
+				spreadAngle = 7
+				automateSafeDeploy = 0
+				stagingEnabled = False
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					DeployAction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					CutAction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+				}
+				UPGRADESAPPLIED
+				{
+				}
+			}
+			CAREER_LOG
+			{
+				flight = 2
+				0 = ExitVessel,Kerbin
+				0 = Land,Kerbin
+				0 = Flight,Kerbin
+				0 = Recover
+				1 = ExitVessel,Kerbin
+				1 = BoardVessel,Kerbin
+				1 = Flight,Kerbin
+				1 = Land,Kerbin
+				1 = Recover
+			}
+			FLIGHT_LOG
+			{
+				flight = 2
+				2 = Flight,Kerbin
+				2 = Suborbit,Kerbin
+			}
+		}
+		KERBAL
+		{
+			name = Bill Kerman
+			gender = Male
+			type = Crew
+			trait = Engineer
+			brave = 0.5
+			dumb = 0.800000012
+			badS = False
+			veteran = True
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = True
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Bob Kerman
+			gender = Male
+			type = Crew
+			trait = Scientist
+			brave = 0.300000012
+			dumb = 0.100000001
+			badS = False
+			veteran = True
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = True
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Valentina Kerman
+			gender = Female
+			type = Crew
+			trait = Pilot
+			brave = 0.550000012
+			dumb = 0.400000006
+			badS = True
+			veteran = True
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = True
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Donger Kerman
+			gender = Male
+			type = Applicant
+			trait = Scientist
+			brave = 0.296642929
+			dumb = 0.241595417
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 149770.6452282714
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Wukai Kerman
+			gender = Female
+			type = Applicant
+			trait = Scientist
+			brave = 0.0374704972
+			dumb = 0.236047328
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 257117.91314208976
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Liuting Kerman
+			gender = Female
+			type = Applicant
+			trait = Engineer
+			brave = 0.488606334
+			dumb = 0.166676506
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 120539.54857910148
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Xukang Kerman
+			gender = Male
+			type = Applicant
+			trait = Engineer
+			brave = 0.359567761
+			dumb = 0.10369467
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 182859.73519409171
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Xinduo Kerman
+			gender = Male
+			type = Applicant
+			trait = Pilot
+			brave = 0.0517282672
+			dumb = 0.691260099
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 122441.42617309562
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Angai Kerman
+			gender = Male
+			type = Applicant
+			trait = Scientist
+			brave = 0.351789743
+			dumb = 0.853067994
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 198239.67446411125
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Tangfa Kerman
+			gender = Male
+			type = Applicant
+			trait = Engineer
+			brave = 0.517470002
+			dumb = 0.425991654
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 210882.4112805175
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Yuehan Kerman
+			gender = Male
+			type = Applicant
+			trait = Scientist
+			brave = 0.516696215
+			dumb = 0.297246635
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 215215.17876708976
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Fabian Kerman
+			gender = Male
+			type = Applicant
+			trait = Scientist
+			brave = 0.604343116
+			dumb = 0.956253588
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 200998.89763916007
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Xile Kerman
+			gender = Female
+			type = Unowned
+			trait = Tourist
+			brave = 0.0389872529
+			dumb = 0.960596323
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Lanxi Kerman
+			gender = Male
+			type = Unowned
+			trait = Tourist
+			brave = 0.659020245
+			dumb = 0.618977427
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Jianglei Kerman
+			gender = Male
+			type = Unowned
+			trait = Tourist
+			brave = 0.451239765
+			dumb = 0.564783514
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+	}
+	MESSAGESYSTEM
+	{
+		flash = True
+		MESSAGE
+		{
+			title = 合同完成
+			message = <b>逃离大气层！</b>~n~n上面是什么样的？希望还算有趣，因为你回来的实在太快了！~n~n<b><color=#8BED8B>完成奖励:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  20,800   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 4   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 8   </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = 合同条件完成
+			message = <b>逃离大气层！</b>~n~n完成完成目标系列！~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 32,000   </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 4   </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 8   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = 合同完成
+			message = <b>发射我们的第一艘航天器！</b>~n~n了不起的发射！我们不能有更高要求了！好吧，将来我们还会有更多要求的。~n~n<b><color=#8BED8B>完成奖励:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  2,080   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1   </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = 合同条件完成
+			message = <b>发射我们的第一艘航天器！</b>~n~n完成完成目标系列！~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 3,200   </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1   </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = 合同完成
+			message = <b>从Kerbin收集科学数据。</b>~n~n当我们看到你的报告第九页时，认为你可能在拖延时间！我们现在要开始发射倒计时了。~n~n<b><color=#8BED8B>完成奖励:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  4,160   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2   </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = 合同条件完成
+			message = <b>从Kerbin收集科学数据。</b>~n~n完成完成目标系列！~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 6,400   </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1   </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = 世界第一里程碑
+			message = 我们的太空计划最近的成就已经吸引了不少企业前来投资！~n~n我们已经在母星完成了一次舱外实验。~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 3,200 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n 我们第一次从任务中接回了乘员。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,600 </color>~n~n 我们已经在母星完成了第一次科学实验。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  3,200 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n 我们已经打破了25米/秒的速度纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经发射了第一艘航天器。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,600 </color>~n~n 我们已经打破了80米/秒的速度纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经打破了500米的高度纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经打破了1,000米的陆上距离纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经打破了250米/秒的速度纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经打破了2,000米的高度纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经打破了3,000米的陆上距离纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经打破了790米/秒的速度纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经打破了7,000米的高度纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经打破了10千米的陆上距离纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经打破了32千米的陆上距离纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们在海中溅落。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  4,800 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n 我们已经打破了22千米的高度纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经打破了2,500米/秒的速度纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经打破了70千米的高度纪录。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已进入太空。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  16,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n
+			color = 3
+			icon = 6
+			read = False
+		}
+	}
+}

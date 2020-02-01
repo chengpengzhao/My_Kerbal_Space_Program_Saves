@@ -1,0 +1,15 @@
+vesselCount = 1
+UT = 1519.7601979410965
+gameMode = SCENARIO_NON_RESUMABLE
+gameNull = False
+gameCompatible = True
+funds = 0
+science = 0
+reputationPercent = 0
+ongoingContracts = 0
+missionCurrentScore = 0
+missionIsStarted = False
+missionIsEnded = False
+missionHistoryId = 00000000-0000-0000-0000-000000000000
+missionExpansionVersion = 
+saveMD5 = 270b8320c5e569cd8bb6f5a68ca55d6d

@@ -1,0 +1,101 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "installed-auto",
+    "name": "installed-auto",
+    "abstract": "A list of modules installed on the auto KSP instance",
+    "version": "2020.01.30.12.28.59",
+    "license": [
+        "unknown"
+    ],
+    "depends": [
+        {
+            "name": "AutomatedScienceSampler",
+            "version": "1.3.5-KSP1.8"
+        },
+        {
+            "name": "BetterScienceLabsContinued",
+            "version": "0.2.0"
+        },
+        {
+            "name": "CameraTools",
+            "version": "v1.13.0"
+        },
+        {
+            "name": "Chatterer",
+            "version": "0.9.98"
+        },
+        {
+            "name": "DMagicScienceAnimate",
+            "version": "v0.22"
+        },
+        {
+            "name": "EngineLightRelit",
+            "version": "1.6.2.2"
+        },
+        {
+            "name": "EnvironmentalVisualEnhancements",
+            "version": "2:EVE-1.8.0-2"
+        },
+        {
+            "name": "EnvironmentalVisualEnhancements-HR",
+            "version": "2:EVE-1.2.2-1"
+        },
+        {
+            "name": "HullcamVDSContinued",
+            "version": "0.2.0"
+        },
+        {
+            "name": "KerbalAlarmClock",
+            "version": "v3.12.0.0"
+        },
+        {
+            "name": "KerbalEngineerRedux",
+            "version": "1.1.7.1"
+        },
+        {
+            "name": "KerbalJointReinforcementNext",
+            "version": "v4.1.15"
+        },
+        {
+            "name": "ScienceSituationInfo",
+            "version": "1:1.3.4"
+        },
+        {
+            "name": "StationScienceContinued",
+            "version": "v2.6.0"
+        },
+        {
+            "name": "KerboKatzUtilities",
+            "version": "1.5.2-KSP1.8"
+        },
+        {
+            "name": "SpacetuxSA",
+            "version": "0.3.13"
+        },
+        {
+            "name": "RemoteTech",
+            "version": "v1.9.5"
+        },
+        {
+            "name": "SCANsat",
+            "version": "v18.14"
+        },
+        {
+            "name": "Scatterer",
+            "version": "2:v0.0541"
+        },
+        {
+            "name": "Scatterer-config",
+            "version": "2:v0.0541"
+        },
+        {
+            "name": "Scatterer-sunflare",
+            "version": "2:v0.0541"
+        },
+        {
+            "name": "Trajectories",
+            "version": "v2.3.0"
+        }
+    ],
+    "kind": "metapackage"
+}

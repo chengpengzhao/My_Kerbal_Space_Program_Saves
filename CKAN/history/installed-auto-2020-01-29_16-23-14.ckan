@@ -1,0 +1,37 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "installed-auto",
+    "name": "installed-auto",
+    "abstract": "A list of modules installed on the auto KSP instance",
+    "version": "2020.01.29.07.23.14",
+    "license": [
+        "unknown"
+    ],
+    "depends": [
+        {
+            "name": "CommunityResourcePack",
+            "version": "1.3.0.0"
+        },
+        {
+            "name": "EnvironmentalVisualEnhancements",
+            "version": "2:EVE-1.8.0-2"
+        },
+        {
+            "name": "EnvironmentalVisualEnhancements-HR",
+            "version": "2:EVE-1.2.2-1"
+        },
+        {
+            "name": "KerbalAlarmClock",
+            "version": "v3.12.0.0"
+        },
+        {
+            "name": "TriggerAu-Flags",
+            "version": "v2.9.3.0"
+        },
+        {
+            "name": "MechJeb2",
+            "version": "2.9.1.0"
+        }
+    ],
+    "kind": "metapackage"
+}

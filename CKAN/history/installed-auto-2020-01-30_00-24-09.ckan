@@ -1,0 +1,125 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "installed-auto",
+    "name": "installed-auto",
+    "abstract": "A list of modules installed on the auto KSP instance",
+    "version": "2020.01.29.03.24.09",
+    "license": [
+        "unknown"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager",
+            "version": "4.0.3"
+        },
+        {
+            "name": "EnvironmentalVisualEnhancements",
+            "version": "2:EVE-1.4.2-2"
+        },
+        {
+            "name": "RealScaleBoostersStockalike",
+            "version": "0.4"
+        },
+        {
+            "name": "RealScaleBoosters",
+            "version": "0.16"
+        },
+        {
+            "name": "HullcamVDSContinued",
+            "version": "0.1.13"
+        },
+        {
+            "name": "KerbalEngineerRedux",
+            "version": "1.1.5.7"
+        },
+        {
+            "name": "RSSeaDragon",
+            "version": "0.3.4"
+        },
+        {
+            "name": "RSSTextures8192",
+            "version": "v13.1"
+        },
+        {
+            "name": "KerbalJointReinforcementContinued",
+            "version": "v3.5.0"
+        },
+        {
+            "name": "CommunityResourcePack",
+            "version": "1.0.0.0"
+        },
+        {
+            "name": "EngineLighting",
+            "version": "1.5.1"
+        },
+        {
+            "name": "MechJebForAll",
+            "version": "1.3.0.6"
+        },
+        {
+            "name": "Chatterer",
+            "version": "0.9.97"
+        },
+        {
+            "name": "EnvironmentalVisualEnhancements-HR",
+            "version": "2:EVE-1.2.2-1"
+        },
+        {
+            "name": "kOS",
+            "version": "1:1.1.5.2"
+        },
+        {
+            "name": "Trajectories",
+            "version": "v2.3.0"
+        },
+        {
+            "name": "Scatterer-config",
+            "version": "2:v0.0336"
+        },
+        {
+            "name": "Scatterer",
+            "version": "2:v0.0336"
+        },
+        {
+            "name": "CameraTools",
+            "version": "v1.11.0"
+        },
+        {
+            "name": "RemoteTech",
+            "version": "v1.9.0"
+        },
+        {
+            "name": "Scatterer-sunflare",
+            "version": "2:v0.0336"
+        },
+        {
+            "name": "MechJeb2",
+            "version": "2.8.1.0"
+        },
+        {
+            "name": "ToolbarController",
+            "version": "1:0.1.8.2"
+        },
+        {
+            "name": "ScienceAlert",
+            "version": "1.9.6.2"
+        },
+        {
+            "name": "SCANsat",
+            "version": "v18.10"
+        },
+        {
+            "name": "ClickThroughBlocker",
+            "version": "0.1.7.2"
+        },
+        {
+            "name": "KerbalAlarmClock",
+            "version": "v3.9.1.0"
+        },
+        {
+            "name": "TriggerAu-Flags",
+            "version": "v2.9.3.0"
+        }
+    ],
+    "kind": "metapackage"
+}

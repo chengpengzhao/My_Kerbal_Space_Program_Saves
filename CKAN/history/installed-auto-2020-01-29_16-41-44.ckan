@@ -1,0 +1,89 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "installed-auto",
+    "name": "installed-auto",
+    "abstract": "A list of modules installed on the auto KSP instance",
+    "version": "2020.01.29.07.41.44",
+    "license": [
+        "unknown"
+    ],
+    "depends": [
+        {
+            "name": "RFStockalike",
+            "version": "v3.2.6.6"
+        },
+        {
+            "name": "RealScaleBoostersStockalike",
+            "version": "0.4"
+        },
+        {
+            "name": "RealScaleBoosters",
+            "version": "0.16"
+        },
+        {
+            "name": "RealPlume-StockConfigs",
+            "version": "v3.0.1"
+        },
+        {
+            "name": "RealPlume",
+            "version": "2:v13.1.0"
+        },
+        {
+            "name": "RealFuels",
+            "version": "rf-v12.8.4"
+        },
+        {
+            "name": "RSSeaDragon",
+            "version": "0.3.4"
+        },
+        {
+            "name": "RSSTextures8192",
+            "version": "v13.1"
+        },
+        {
+            "name": "EngineLighting",
+            "version": "1.5.1"
+        },
+        {
+            "name": "KerbalJointReinforcementContinued",
+            "version": "v3.5.0"
+        },
+        {
+            "name": "ModuleManager",
+            "version": "4.0.3"
+        },
+        {
+            "name": "CommunityResourcePack",
+            "version": "1.0.0.0"
+        },
+        {
+            "name": "SolverEngines",
+            "version": "v3.7.2"
+        },
+        {
+            "name": "SmokeScreen",
+            "version": "2.8.2.0"
+        },
+        {
+            "name": "MechJeb2",
+            "version": "2.9.1.0"
+        },
+        {
+            "name": "MechJebForAll",
+            "version": "1.3.0.6"
+        },
+        {
+            "name": "KerbalEngineerRedux",
+            "version": "1.1.5.7"
+        },
+        {
+            "name": "CameraTools",
+            "version": "v1.13.0"
+        },
+        {
+            "name": "HullcamVDSContinued",
+            "version": "0.2.0"
+        }
+    ],
+    "kind": "metapackage"
+}
