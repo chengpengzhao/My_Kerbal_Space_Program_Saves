@@ -3,7 +3,7 @@
     "identifier": "installed-auto",
     "name": "installed-auto",
     "abstract": "A list of modules installed on the auto KSP instance",
-    "version": "2020.02.01.02.04.26",
+    "version": "2020.02.02.03.30.55",
     "license": [
         "unknown"
     ],
@@ -115,6 +115,14 @@
         {
             "name": "ToolbarController",
             "version": "1:0.1.9.4"
+        },
+        {
+            "name": "TweakScale",
+            "version": "v2.4.3.10"
+        },
+        {
+            "name": "ProceduralFairings",
+            "version": "1:v1.6.2"
         }
     ],
     "kind": "metapackage"
